@@ -1,0 +1,16 @@
+a {
+  color: purple;
+  text-decoration: none;
+  display: inline-block;
+}
+a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background:purple;
+  transition: 300ms;
+}
+a:hover::after {
+  width: 100%;
+}
